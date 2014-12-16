@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>映画レビュー</title>
+</head>
+<body>
+
+  <p align="center">映画レビュー</p>
+
+  <table align="center" border="1">
+
+    <th bgcolor="#80ffff">名称</th>
+    <th bgcolor="#80ffff">詳細名称</th>
+    <th bgcolor="#80ffff">画像</th>
+    <th bgcolor="#80ffff">評価</th>
+    <th bgcolor="#80ffff">覚書</th>
+
+    <% @movie.each do |val| %>
+    <tr>
+      <td width="80"><%= val.name%></td>
+      <td width="200"><%= val.detail%></td>
+      <td width="250"><img src="<%= val.img_path%>" width="200" height="100" alt=""></td>
+      <td width="80"></td>
+      <td width="200"></td>
+    </tr>
+    <% end %>
+
+  </table>
+
+</body>
+</html>
