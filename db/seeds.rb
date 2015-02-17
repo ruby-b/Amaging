@@ -8,4 +8,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Movie.create(:name => '大日本人', :detail => '松本人志監督第1回作品として超注目を集めたこの作品。', :release_date => '2014-10-30', :status => 1, :img_path => "http://flowerwild.net/images/dainihonjin001.jpg")
+Movie.create(:name => '大日本人', :detail => '松本人志監督第1回作品として超注目を集めたこの作品。', :release_date => '2014-10-30', :rate => 1, :img_path => "http://flowerwild.net/images/dainihonjin001.jpg")
