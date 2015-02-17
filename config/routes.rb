@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'memos/input'
+
+  get 'memos/confirm'
+
+  get 'memos/complete'
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -56,5 +62,8 @@ Rails.application.routes.draw do
   #   end
 
   root to: 'top#show'
+
+  get 'memos/input/:movie_id' => 'memos#input'
+  post 'memos/complete/:movie_id' => 'memos#complete'
 
 end
