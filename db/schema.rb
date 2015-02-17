@@ -13,6 +13,14 @@
 
 ActiveRecord::Schema.define(version: 20150217083615) do
 
+  create_table "memos", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "movie_id"
+    t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "movies", force: true do |t|
     t.string   "name"
     t.string   "detail"

@@ -14,7 +14,15 @@
       <td width="80"><%= val.name%></td>
       <td width="200"><%= val.detail%></td>
       <td width="250"><img src="<%= val.img_path%>" width="200" height="100" alt=""></td>
-      <td width="80"></td>
+      <td width="200">
+        <%= form_for(val) do |f| %>
+          <%= f.radio_button 'rate', '1', {:class => "star", :disabled => true} %>
+          <%= f.radio_button 'rate', '2', {:class => "star", :disabled => true} %>
+          <%= f.radio_button 'rate', '3', {:class => "star", :disabled => true} %>
+          <%= f.radio_button 'rate', '4', {:class => "star", :disabled => true} %>
+          <%= f.radio_button 'rate', '5', {:class => "star", :disabled => true} %>
+        <% end %>
+      </td>
       <td width="200"></td>
     </tr>
     <% end %>
