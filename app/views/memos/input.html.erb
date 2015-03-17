@@ -1,6 +1,10 @@
+<ul>
+<% @memo.errors.full_messages.each do |message| %>
+<li><%= message %></li>
+<% end %>
+</ul>
 
 <%= form_for @memo, :url => {:action => 'complete'} do |f| %>
-
 
     <%= f.label :message, "覚書" %><br>
     <%= f.text_area :message %><br>
@@ -8,3 +12,22 @@
     <%= f.submit "登録する" %>
 
 <% end %>
+
+
+
+<!--
+<br><br><br><br>
+
+================================================================<br>
+
+<table>
+  <% @data.each do |val| %>
+    <tr>
+      <td><%= val.id%></td>
+      <td><%= val.user_id%></td>
+      <td><%= val.movie_id%></td>
+      <td><%= val.message%></td>
+    </tr>
+  <% end %>
+</table>
+-->

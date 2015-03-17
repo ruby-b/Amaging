@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resource :ranking
   get 'memos/input'
-  get 'memos/confirm'
   get 'memos/complete'
 
   devise_for :users
