@@ -43,3 +43,6 @@ gem 'devise'
 gem 'jquery-star-rating-rails'
 
 gem 'nokogiri'
+
+gem 'redis' # ランキングができない場合は消す
+gem 'redis-rails'# ランキングができない場合は消す

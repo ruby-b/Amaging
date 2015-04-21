@@ -1,2 +1,89 @@
-<h1>Rankings#show</h1>
-<p>Find me in app/views/rankings/show.html.erb</p>
+
+<center>
+  <h1>映画WEBサイトランキング</h1><br/>
+
+  <table class="test">
+    <p>■映画ランキング・映画興行収入■</p>
+    <p><%= @extraction[20] %> -- 
+      <a href="http://eiga.com/ranking/" target="_tblank">映画リンク</a><br/>
+    </p>
+    <tbody>
+    <tr>
+    <th>1位</th>
+      <td><%= @extraction[1] %></td>
+    </tr>
+    <tr>
+    <th>2位</th>
+      <td><%= @extraction[3] %></td>
+    </tr>
+    <tr>
+    <th>3位</th>
+      <td><%= @extraction[5] %></td>
+    </tr>
+    <th>4位</th>
+      <td><%= @extraction[7] %></td>
+    </tr>
+    <th>5位</th>
+      <td><%= @extraction[9] %></td>
+    </tr>
+    <th>6位</th>
+      <td><%= @extraction[11] %></td>
+    </tr>
+    <th>7位</th>
+      <td><%= @extraction[13] %></td>
+    </tr>
+    <th>8位</th>
+      <td><%= @extraction[15] %></td>
+    </tr>
+    <th>9位</th>
+      <td><%= @extraction[17] %></td>
+    </tr>
+    <th>10位</th>
+      <td><%= @extraction[19] %></td>
+    </tr>
+    </tbody>
+  </table
+  <br/><br/><br/>
+
+  <p>■今週末みたい映画ランキング■</p>
+  <p>映画ランキング ： 毎日更新 -- 
+    <a href="http://movies.yahoo.co.jp/ranking/wish/" target="_tblank">映画リンク</a><br/>
+  </p>
+  <table class="test">
+    <tbody>
+    <tr>
+    <th>1位</th>
+      <td><%= @extraction2[0] %></td>
+    </tr>
+    <tr>
+    <th>2位</th>
+      <td><%= @extraction2[1] %></td>
+    </tr>
+    <tr>
+    <th>3位</th>
+      <td><%= @extraction2[2] %></td>
+    </tr>
+    <th>4位</th>
+      <td><%= @extraction2[3] %></td>
+    </tr>
+    <th>5位</th>
+      <td><%= @extraction2[4] %></td>
+    </tr>
+    <th>6位</th>
+      <td><%= @extraction2[5] %></td>
+    </tr>
+    <th>7位</th>
+      <td><%= @extraction2[6] %></td>
+    </tr>
+    <th>8位</th>
+      <td><%= @extraction2[7] %></td>
+    </tr>
+    <th>9位</th>
+      <td><%= @extraction2[8] %></td>
+    </tr>
+    <th>10位</th>
+      <td><%= @extraction2[9] %></td>
+    </tr>
+    </tbody>
+  </table>
+</center>
